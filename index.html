@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>odin-rock-paper-scissors-game</title>
 </head>
 <body>
+    <div class="main">
+        <div class="button-group">
+            <button class="btn"  onclick="startGame('rock')">
+                <img src="https://www.wikihow.com/images/thumb/5/57/Play-Rock%2C-Paper%2C-Scissors-Step-1-Version-6.jpg/v4-728px-Play-Rock%2C-Paper%2C-Scissors-Step-1-Version-6.jpg.webp" alt="" srcset="">
+            </button>
+            <button class="btn" onclick="startGame('scissor')">
+                <img src="https://www.wikihow.com/images/thumb/9/99/Play-Rock%2C-Paper%2C-Scissors-Step-2-Version-5.jpg/v4-728px-Play-Rock%2C-Paper%2C-Scissors-Step-2-Version-5.jpg.webp" alt="">
+            </button>
+            <button class="btn" onclick="startGame('paper')">
+                <img src="https://www.wikihow.com/images/thumb/8/84/Play-Rock%2C-Paper%2C-Scissors-Step-3-Version-5.jpg/v4-728px-Play-Rock%2C-Paper%2C-Scissors-Step-3-Version-5.jpg.webp" alt="">
+            </button>
+        </div>
+        <div class="decision-board">
+            <div class="container userscore-container">
+                <h1>You</h1>
+                <p id="userscore-p">0</p>
+            </div>
+            <div class="container computerscore-container">
+                <h1>Computer</h1>
+                <p id="computerscore-p">0</p>
+            </div>
+        </div>
+        <p id="result-text"></p>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
